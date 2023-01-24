@@ -1,0 +1,2 @@
+- This folder contains Python scripts that I've written and find to be useful
+- Not claiming originality in these scripts - Many I have used code from other projects and adapted for my own needs. 
