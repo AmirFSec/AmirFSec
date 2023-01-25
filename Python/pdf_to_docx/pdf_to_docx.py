@@ -3,14 +3,11 @@ import sys
 import os
 
 def Usage():
-    print ("Usage: PDF-To-Docx.py <file.pdf>\n")
+    print ("Usage: pdf_to_docx.py <file.pdf>\n")
     exit()
     
 
 def main():   
-    
-    pdf_file = None
-    docx_file = None
 
     if (len(sys.argv) <= 1):
         Usage()
