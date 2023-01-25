@@ -1,6 +1,6 @@
 _**Python to Docx converter**_
 
-- Requires pdf2docx library:\
+- Requires pdf2docx library:
 - Run following to install appropriate library\
     **pip install -r requirements.txt**
 
