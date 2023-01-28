@@ -17,7 +17,7 @@ def main():
     # Simple check to see if provided file exists
     if not os.path.exists(pdf_file):
         print("File does not exist. Exiting program.")
-        return
+        exit()
 
     # check if extension is .pdf. Convert filename first to lower case 
     pdf_file = pdf_file.lower()
