@@ -15,20 +15,20 @@ e.g. useful if we want to do something with elements in an array/string, and sav
 
 ### Vector arrays
 
-#### Declaring an empty string vector with unknown size
+#### *Declaring an empty string vector with unknown size*
 
 ```c++
-`vector <string> array;`
+vector <string> array;
 ```
-#### Declaring array with elements
+#### *Declaring array with elements*
 
 ```c++
-`vector <string> array = {"string1", "string2", "stringn"};`
+vector <string> array = {"string1", "string2", "stringn"};
 ```
 
-#### Printing contents of a vector - Use for loop and const auto 
+#### *Printing contents of a vector - Use for loop and const auto* 
 
-**Using array declared above:** 
+*Using array declared above:*
 
 ```c++
 for (const auto &str : array) 
@@ -37,7 +37,7 @@ for (const auto &str : array)
 }
 ```
 
-#### count function
+### Count function
 
 Can use to count occurance of char in an string
 
@@ -52,6 +52,3 @@ char c = 'y';
 
 std::cout << std::count(test_string.begin(), test_string.end(), c);
 ```
-
-
-
