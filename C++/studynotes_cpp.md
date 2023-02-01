@@ -72,7 +72,7 @@ std::cout << std::count(test_string.begin(), test_string.end(), c);
 
 ### Allocating and freeing memory from Heap
 
-## new operator 
+#### *new operator*
 
 - Dynamically allocated memory is stored in Heap (and need to point to it to gain access to it)
 - Heap is free pool of memory
@@ -100,8 +100,8 @@ int *p = new int;
 - Can allocate block (array) of memor:
 
 ```c++
-pointer-var = new data_type[size]
-int *p = new int[10;]
+//pointer-var = new data_type[size]
+int *p = new int[10];
 
 ```
 - normal arrays declared locally are deallocated by compiler (since it's local), whereas dynamically allocated arrays are deallocated by programmer or when program exits. 
@@ -116,7 +116,7 @@ if(!p)
 }
 ```
 
-## delete operator
+#### *delete operator*
 
 - Need to deallocate memory that's been allocated on Heap, using delete operator:
 - To free mem pointed to by a declated pointer var and a allocated array:
