@@ -36,6 +36,23 @@ for (const auto &str : array)
     cout << str << endl;
 }
 ```
+#### Get size of vector using size()
+```c++
+array.size()
+```
+
+#### Adding element to end of vector
+Use push_back() 
+
+```c++
+std::vector<std:string> array;
+array.push_back(2);
+```
+#### Removing element from end of vector
+Use pop_back()
+```c++
+array.pop_back(); 
+```
 
 ### Count function
 
