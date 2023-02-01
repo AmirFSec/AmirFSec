@@ -69,3 +69,66 @@ char c = 'y';
 
 std::cout << std::count(test_string.begin(), test_string.end(), c);
 ```
+
+### Allocating and freeing memory from Heap
+
+## new operator 
+
+- Dynamically allocated memory is stored in Heap (and need to point to it to gain access to it)
+- Heap is free pool of memory
+- Need to allocate and free it manually - isn't done automatically (memory leak occurs if not deallocated)
+- Good to use Dynamic allocated mem when we need to allocate memory of variable size
+- non-static and local variables get allocated memory on the Stack (pushed and popped on the stack, then released automatically once calling function exits)
+- C uses calloc(), malloc() and free() to allocate memory in heap then free it, for C++, supports these, but also can use new and delete:
+- For example, 
+```c++
+pointer-var = new data_type;    // pointer var is pointer of type data_type. data_type can ve built-in data type (int, float, char, etc..) including array or user-defined types such as struct or class
+```
+
+Example taken from geeksforgeeks:
+
+```c++
+// Poiinter initialized to NULL
+int *p = NULL; 
+p = new int; 
+
+//Can also do
+int *p = new int; 
+
+```
+
+- Can allocate block (array) of memor:
+
+```c++
+pointer-var = new data_type[size]
+int *p = new int[10;]
+
+```
+- normal arrays declared locally are deallocated by compiler (since it's local), whereas dynamically allocated arrays are deallocated by programmer or when program exits. 
+
+- Is not enough memory to allocate, new returns NULL, so best to handle this case using nothrow. e.g. 
+
+```c++
+int *p = new(nothrow) int;
+if(!p)
+{ 
+    cout << "Memory not allocated" << endl; 
+}
+```
+
+## delete operator
+
+- Need to deallocate memory that's been allocated on Heap, using delete operator:
+- To free mem pointed to by a declated pointer var and a allocated array:
+```c++
+//delete pointer-var
+int *p = new int; 
+
+delete p;
+
+// or delete[] pointer-var - if an array
+int *p = new(nothrow) int[20];
+
+delete[] p; 
+
+```
