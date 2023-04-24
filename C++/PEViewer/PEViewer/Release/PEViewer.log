@@ -1,0 +1,8 @@
+﻿  Source.cpp
+C:\Repo\AmirFSec\C++\PEViewer\PEViewer\Source.cpp(28,17): error C2440: 'type cast': cannot convert from 'const char [8]' to 'int'
+C:\Repo\AmirFSec\C++\PEViewer\PEViewer\Source.cpp(28,8): message : There is no context in which this conversion is possible
+C:\Repo\AmirFSec\C++\PEViewer\PEViewer\Source.cpp(28,3): error C2046: illegal case
+C:\Repo\AmirFSec\C++\PEViewer\PEViewer\Source.cpp(32,17): error C2440: 'type cast': cannot convert from 'const char [8]' to 'int'
+C:\Repo\AmirFSec\C++\PEViewer\PEViewer\Source.cpp(32,8): message : There is no context in which this conversion is possible
+C:\Repo\AmirFSec\C++\PEViewer\PEViewer\Source.cpp(32,3): error C2046: illegal case
+C:\Repo\AmirFSec\C++\PEViewer\PEViewer\Source.cpp(38,2): warning C4065: switch statement contains 'default' but no 'case' labels
